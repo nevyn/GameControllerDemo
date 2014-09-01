@@ -8,6 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface TCMyScene : SKScene
-
+@interface TCTextScene : SKScene
+@property(nonatomic) SKLabelNode *label;
 @end
