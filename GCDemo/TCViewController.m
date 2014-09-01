@@ -10,6 +10,7 @@
 #import "TCTextScene.h"
 #import "TCImageScene.h"
 #import "TCAttributedTextScene.h"
+#import "TCGameScene.h"
 #import <GameController/GameController.h>
 
 @implementation TCViewController
@@ -26,6 +27,8 @@
 		@{
 			@"scene": [TCTextScene class],
 			@"backgroundColor": [UIColor colorWithHue:0.911 saturation:0.092 brightness:0.823 alpha:1.000],
+			@"numberLabel.fontSize": @200,
+			@"numberLabel.text": @"@nevyn",
 			@"label.fontName": @"HelveticaNeue-Thin",
 			@"label.text": @"+[GCController introGuide]",
 			@"label.fontSize": @68,
@@ -36,18 +39,22 @@
 			@"scene": [TCTextScene class],
 			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
 			@"label.fontName": @"HelveticaNeue-UltraLight",
-			@"label.text": @"1. Precision",
+			@"numberLabel.fontSize": @700,
+			@"numberLabel.text": @"1",
+			@"label.text": @"Precision",
 			@"label.fontSize": @100,
 		},
 		@{
 			@"scene": [TCTextScene class],
-			@"label.text": @"2. API 😍",
+			@"numberLabel.text": @"2",
+			@"label.text": @"API 😍",
 			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
 			@"label.fontSize": @100,
 		},
 		@{
 			@"scene": [TCTextScene class],
-			@"label.text": @"3. 😎",
+			@"numberLabel.text": @"3",
+			@"label.text": @"😎",
 			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
 			@"label.fontSize": @100,
 		},
@@ -112,11 +119,45 @@
 			@"scene": [TCTextScene class],
 			@"backgroundColor": [UIColor colorWithHue:0.911 saturation:0.092 brightness:0.823 alpha:1.000],
 			@"label.fontName": @"HelveticaNeue-Thin",
+			@"numberLabel.text": @"",
 			@"label.text": @"Getting Input",
 			@"label.fontSize": @80,
 		},
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontName": @"HelveticaNeue-UltraLight",
+			@"numberLabel.text": @"1",
+			@"label.text": @"Polling",
+			@"label.fontSize": @90,
+		},
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontName": @"HelveticaNeue-UltraLight",
+			@"numberLabel.text": @"2",
+			@"label.text": @"Event based",
+			@"label.fontSize": @90,
+		},
+		
+		@{
+			@"scene": [TCGameScene class],
+			@"label.text": @"Event based demo",
+			@"label.fontSize": @80,
+
+		},
 
 
+
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithHue:0.911 saturation:0.092 brightness:0.823 alpha:1.000],
+			@"numberLabel.fontSize": @700,
+			@"numberLabel.text": @"",
+			@"label.fontName": @"HelveticaNeue-Thin",
+			@"label.text": @"Thankyouuu",
+			@"label.fontSize": @68,
+		},
 	];
 	
 	_index = -1;
@@ -129,6 +170,7 @@
 {
 	int i = 0;
 	for(GCController *controller in [GCController controllers]) {
+		NSLog(@"Connecting controller %@", controller);
 		if(controller.playerIndex == GCControllerPlayerIndexUnset)
 			controller.playerIndex = i++;
 		
@@ -176,7 +218,7 @@
 	Class klass = step[@"scene"];
 
 	SKScene *scene = [(SKView*)self.view scene];
-	if(![scene isKindOfClass:klass]) {
+	if([scene class] != klass) {
 		scene = [klass sceneWithSize:self.view.bounds.size];
 		scene.scaleMode = SKSceneScaleModeAspectFill;
 		[(SKView*)self.view presentScene:scene];

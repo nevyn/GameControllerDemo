@@ -31,6 +31,7 @@
 		0529F1E419B49D37007B1934 /* TCAttributedTextScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */; };
 		0538CC9419B4A0040045DA8F /* code1.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9319B4A0040045DA8F /* code1.rtf */; };
 		0538CC9619B4A1790045DA8F /* code2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9519B4A1790045DA8F /* code2.rtf */; };
+		0538CC9919B4A7370045DA8F /* TCGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0538CC9819B4A7370045DA8F /* TCGameScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAttributedTextScene.m; sourceTree = "<group>"; };
 		0538CC9319B4A0040045DA8F /* code1.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code1.rtf; sourceTree = "<group>"; };
 		0538CC9519B4A1790045DA8F /* code2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code2.rtf; sourceTree = "<group>"; };
+		0538CC9719B4A7370045DA8F /* TCGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGameScene.h; sourceTree = "<group>"; };
+		0538CC9819B4A7370045DA8F /* TCGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				0521CD6019B47425001BA54D /* TCTextScene.m */,
 				0521CD8719B497BF001BA54D /* TCImageScene.h */,
 				0521CD8819B497BF001BA54D /* TCImageScene.m */,
+				0538CC9719B4A7370045DA8F /* TCGameScene.h */,
+				0538CC9819B4A7370045DA8F /* TCGameScene.m */,
 				0529F1E019B49CCE007B1934 /* ASAttributedLabelNode.swift */,
 				0529F1E219B49D37007B1934 /* TCAttributedTextScene.h */,
 				0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */,
@@ -301,6 +306,7 @@
 				0529F1E119B49CCE007B1934 /* ASAttributedLabelNode.swift in Sources */,
 				0529F1E419B49D37007B1934 /* TCAttributedTextScene.m in Sources */,
 				0521CD5519B47425001BA54D /* TCAppDelegate.m in Sources */,
+				0538CC9919B4A7370045DA8F /* TCGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
