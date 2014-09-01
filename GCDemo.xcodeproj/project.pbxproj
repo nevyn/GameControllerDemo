@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0505300019B4C6D700448EED /* code3.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 05052FFF19B4C6D700448EED /* code3.rtf */; };
 		0505300219B4C85B00448EED /* code4.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0505300119B4C85B00448EED /* code4.rtf */; };
+		0505300419B4C9ED00448EED /* code5.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0505300319B4C9ED00448EED /* code5.rtf */; };
 		0521CD4319B47425001BA54D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD4219B47425001BA54D /* Foundation.framework */; };
 		0521CD4519B47425001BA54D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD4419B47425001BA54D /* CoreGraphics.framework */; };
 		0521CD4719B47425001BA54D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD4619B47425001BA54D /* UIKit.framework */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		05052FFF19B4C6D700448EED /* code3.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code3.rtf; sourceTree = "<group>"; };
 		0505300119B4C85B00448EED /* code4.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code4.rtf; sourceTree = "<group>"; };
+		0505300319B4C9ED00448EED /* code5.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code5.rtf; sourceTree = "<group>"; };
 		0521CD3F19B47425001BA54D /* GCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0521CD4219B47425001BA54D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0521CD4419B47425001BA54D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +174,7 @@
 				0538CC9519B4A1790045DA8F /* code2.rtf */,
 				05052FFF19B4C6D700448EED /* code3.rtf */,
 				0505300119B4C85B00448EED /* code4.rtf */,
+				0505300319B4C9ED00448EED /* code5.rtf */,
 				0521CD6219B47425001BA54D /* Spaceship.png */,
 				0521CD6419B47425001BA54D /* Images.xcassets */,
 				0521CD4B19B47425001BA54D /* Supporting Files */,
@@ -289,6 +292,7 @@
 				0521CD6319B47425001BA54D /* Spaceship.png in Resources */,
 				0538CC9D19B4C0680045DA8F /* spark.png in Resources */,
 				0538CC9C19B4C0680045DA8F /* bullet.sks in Resources */,
+				0505300419B4C9ED00448EED /* code5.rtf in Resources */,
 				0521CD6519B47425001BA54D /* Images.xcassets in Resources */,
 				0505300219B4C85B00448EED /* code4.rtf in Resources */,
 				0521CD5B19B47425001BA54D /* Main_iPad.storyboard in Resources */,
