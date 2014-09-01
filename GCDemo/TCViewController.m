@@ -142,9 +142,11 @@
 		
 		@{
 			@"scene": [TCGameScene class],
-			@"label.text": @"Event based demo",
-			@"label.fontSize": @80,
-
+			@"label.attributedString": [[NSAttributedString alloc] initWithFileURL:[[NSBundle mainBundle] URLForResource:@"code3" withExtension:@"rtf"] options:nil documentAttributes:nil error:NULL],
+		},
+		@{
+			@"scene": [TCGameScene class],
+			@"label.attributedString": [[NSAttributedString alloc] initWithFileURL:[[NSBundle mainBundle] URLForResource:@"code4" withExtension:@"rtf"] options:nil documentAttributes:nil error:NULL],
 		},
 
 

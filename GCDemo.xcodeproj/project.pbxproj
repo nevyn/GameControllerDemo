@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0505300019B4C6D700448EED /* code3.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 05052FFF19B4C6D700448EED /* code3.rtf */; };
+		0505300219B4C85B00448EED /* code4.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0505300119B4C85B00448EED /* code4.rtf */; };
 		0521CD4319B47425001BA54D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD4219B47425001BA54D /* Foundation.framework */; };
 		0521CD4519B47425001BA54D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD4419B47425001BA54D /* CoreGraphics.framework */; };
 		0521CD4719B47425001BA54D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD4619B47425001BA54D /* UIKit.framework */; };
@@ -32,6 +34,8 @@
 		0538CC9419B4A0040045DA8F /* code1.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9319B4A0040045DA8F /* code1.rtf */; };
 		0538CC9619B4A1790045DA8F /* code2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9519B4A1790045DA8F /* code2.rtf */; };
 		0538CC9919B4A7370045DA8F /* TCGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0538CC9819B4A7370045DA8F /* TCGameScene.m */; };
+		0538CC9C19B4C0680045DA8F /* bullet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9A19B4C0680045DA8F /* bullet.sks */; };
+		0538CC9D19B4C0680045DA8F /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9B19B4C0680045DA8F /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05052FFF19B4C6D700448EED /* code3.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code3.rtf; sourceTree = "<group>"; };
+		0505300119B4C85B00448EED /* code4.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code4.rtf; sourceTree = "<group>"; };
 		0521CD3F19B47425001BA54D /* GCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0521CD4219B47425001BA54D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0521CD4419B47425001BA54D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +86,8 @@
 		0538CC9519B4A1790045DA8F /* code2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code2.rtf; sourceTree = "<group>"; };
 		0538CC9719B4A7370045DA8F /* TCGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGameScene.h; sourceTree = "<group>"; };
 		0538CC9819B4A7370045DA8F /* TCGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGameScene.m; sourceTree = "<group>"; };
+		0538CC9A19B4C0680045DA8F /* bullet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bullet.sks; sourceTree = "<group>"; };
+		0538CC9B19B4C0680045DA8F /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +166,12 @@
 				0529F1E019B49CCE007B1934 /* ASAttributedLabelNode.swift */,
 				0529F1E219B49D37007B1934 /* TCAttributedTextScene.h */,
 				0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */,
+				0538CC9A19B4C0680045DA8F /* bullet.sks */,
+				0538CC9B19B4C0680045DA8F /* spark.png */,
 				0538CC9319B4A0040045DA8F /* code1.rtf */,
 				0538CC9519B4A1790045DA8F /* code2.rtf */,
+				05052FFF19B4C6D700448EED /* code3.rtf */,
+				0505300119B4C85B00448EED /* code4.rtf */,
 				0521CD6219B47425001BA54D /* Spaceship.png */,
 				0521CD6419B47425001BA54D /* Images.xcassets */,
 				0521CD4B19B47425001BA54D /* Supporting Files */,
@@ -275,8 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0521CD6319B47425001BA54D /* Spaceship.png in Resources */,
+				0538CC9D19B4C0680045DA8F /* spark.png in Resources */,
+				0538CC9C19B4C0680045DA8F /* bullet.sks in Resources */,
 				0521CD6519B47425001BA54D /* Images.xcassets in Resources */,
+				0505300219B4C85B00448EED /* code4.rtf in Resources */,
 				0521CD5B19B47425001BA54D /* Main_iPad.storyboard in Resources */,
+				0505300019B4C6D700448EED /* code3.rtf in Resources */,
 				0538CC9419B4A0040045DA8F /* code1.rtf in Resources */,
 				0521CD5819B47425001BA54D /* Main_iPhone.storyboard in Resources */,
 				0521CD4F19B47425001BA54D /* InfoPlist.strings in Resources */,

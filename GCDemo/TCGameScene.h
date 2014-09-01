@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 ThirdCog. All rights reserved.
 //
 
-#import "TCTextScene.h"
+#import "TCAttributedTextScene.h"
 
-@interface TCGameScene : TCTextScene
+@interface TCGameScene : TCAttributedTextScene
 
 @end

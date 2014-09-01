@@ -18,6 +18,7 @@ enum {
 @interface TCGamePlayerSprite : SKSpriteNode
 @property(nonatomic) BOOL touchingGround;
 @property(nonatomic) SKSpriteNode *gun;
+@property(nonatomic) SKNode *bullet;
 @end
 
 @implementation TCGamePlayerSprite
@@ -87,11 +88,11 @@ enum {
 			playerNode.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(20, 50)];
 			playerNode.physicsBody.allowsRotation = NO;
 			playerNode.physicsBody.categoryBitMask = CollisionPlayer;
-			playerNode.physicsBody.contactTestBitMask = CollisionGround;
+			playerNode.physicsBody.contactTestBitMask = CollisionGround|CollisionBullet;
 			playerNode.physicsBody.restitution = 0.01;
 			
 			playerNode.gun = [SKSpriteNode spriteNodeWithColor:[UIColor whiteColor] size:CGSizeMake(10, 10)];
-			playerNode.gun.position = CGPointMake(10, 5);
+			playerNode.gun.position = CGPointMake(15, 5);
 			[playerNode addChild:playerNode.gun];
 			[_game addChild:playerNode];
 		}
@@ -115,7 +116,7 @@ static float frandom() {
 	
 	// Dead? Respawn.
 	if(player.alpha == 0) {
-		player.position = CGPointMake(frandom()*1024, frandom()*400);
+		player.position = CGPointMake(frandom()*1024, frandom()*400+40);
 		player.alpha = 1;
 		_game.alpha = 1;
 		return;
@@ -136,6 +137,28 @@ static float frandom() {
 	TCGamePlayerSprite *player = _playerSprites[@(playerIndex)];
 	if(player.alpha == 0) // dead
 		return;
+	
+	// only one bullet at a time
+	if(player.bullet)
+		return;
+	
+	SKEmitterNode *bullet = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"bullet" ofType:@"sks"]];
+	bullet.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10];
+	bullet.physicsBody.categoryBitMask = CollisionBullet;
+	bullet.targetNode = _game;
+	bullet.position = [_game convertPoint:player.gun.position fromNode:player.gun];
+	[bullet runAction:[SKAction sequence:@[
+		[SKAction waitForDuration:0.5],
+		[SKAction runBlock:^{
+			player.bullet = nil;
+		}],
+		[SKAction removeFromParent],
+	]]];
+	[_game addChild:bullet];
+	bullet.physicsBody.affectedByGravity = NO;
+	[bullet.physicsBody applyImpulse:CGVectorMake(player.gun.position.x, 0)];
+	player.bullet = bullet;
+	
 }
 
 - (void)update:(NSTimeInterval)currentTime
@@ -151,22 +174,29 @@ static float frandom() {
 		player.physicsBody.velocity = CGVectorMake(xAxisValue*400, player.physicsBody.velocity.dy);
 		
 		if(xAxisValue > 0) {
-			player.gun.position = CGPointMake(10, 5);
+			player.gun.position = CGPointMake(15, 5);
 		} else if(xAxisValue < 0) {
-			player.gun.position = CGPointMake(-10, 5);
+			player.gun.position = CGPointMake(-15, 5);
 		}
 	}
 }
 
 - (void)didBeginContact:(SKPhysicsContact *)contact
 {
-	TCGamePlayerSprite *sprite = (id)contact.bodyA.node;
-	if(![sprite isKindOfClass:[TCGamePlayerSprite class]])
-		sprite = (id)contact.bodyB.node;
-	if(![sprite isKindOfClass:[TCGamePlayerSprite class]])
-		return;
-	
-	sprite.touchingGround = YES;
+	TCGamePlayerSprite *playerSprite = (id)contact.bodyA.node;
+	SKSpriteNode *other = (id)contact.bodyB.node;
+	if(![playerSprite isKindOfClass:[TCGamePlayerSprite class]]) {
+		playerSprite = (id)contact.bodyB.node;
+		other = (id)contact.bodyA.node;
+	}
+	if([playerSprite isKindOfClass:[TCGamePlayerSprite class]]) {
+		if(other.physicsBody.categoryBitMask & CollisionGround) {
+			playerSprite.touchingGround = YES;
+		}
+		if(other.physicsBody.categoryBitMask & CollisionBullet) {
+			playerSprite.alpha = 0;
+		}
+	}
 }
 
 - (void)didEndContact:(SKPhysicsContact *)contact
