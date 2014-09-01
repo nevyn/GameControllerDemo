@@ -53,15 +53,15 @@
 		05052FFF19B4C6D700448EED /* code3.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code3.rtf; sourceTree = "<group>"; };
 		0505300119B4C85B00448EED /* code4.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code4.rtf; sourceTree = "<group>"; };
 		0505300319B4C9ED00448EED /* code5.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code5.rtf; sourceTree = "<group>"; };
-		0521CD3F19B47425001BA54D /* GCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0521CD3F19B47425001BA54D /* GameControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0521CD4219B47425001BA54D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0521CD4419B47425001BA54D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0521CD4619B47425001BA54D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0521CD4819B47425001BA54D /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		0521CD4C19B47425001BA54D /* GCDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCDemo-Info.plist"; sourceTree = "<group>"; };
+		0521CD4C19B47425001BA54D /* GameControllerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameControllerDemo-Info.plist"; sourceTree = "<group>"; };
 		0521CD4E19B47425001BA54D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0521CD5019B47425001BA54D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0521CD5219B47425001BA54D /* GCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0521CD5219B47425001BA54D /* GameControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		0521CD5319B47425001BA54D /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
 		0521CD5419B47425001BA54D /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
 		0521CD5719B47425001BA54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -72,9 +72,9 @@
 		0521CD6019B47425001BA54D /* TCTextScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCTextScene.m; sourceTree = "<group>"; };
 		0521CD6219B47425001BA54D /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		0521CD6419B47425001BA54D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0521CD6A19B47425001BA54D /* GCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0521CD6A19B47425001BA54D /* GameControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0521CD6B19B47425001BA54D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0521CD7319B47425001BA54D /* GCDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCDemoTests-Info.plist"; sourceTree = "<group>"; };
+		0521CD7319B47425001BA54D /* GameControllerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameControllerDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0521CD7519B47425001BA54D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0521CD7719B47425001BA54D /* GCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDemoTests.m; sourceTree = "<group>"; };
 		0521CD8119B47A41001BA54D /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -131,8 +131,8 @@
 		0521CD4019B47425001BA54D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0521CD3F19B47425001BA54D /* GCDemo.app */,
-				0521CD6A19B47425001BA54D /* GCDemoTests.xctest */,
+				0521CD3F19B47425001BA54D /* GameControllerDemo.app */,
+				0521CD6A19B47425001BA54D /* GameControllerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,10 +186,10 @@
 		0521CD4B19B47425001BA54D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0521CD4C19B47425001BA54D /* GCDemo-Info.plist */,
+				0521CD4C19B47425001BA54D /* GameControllerDemo-Info.plist */,
 				0521CD4D19B47425001BA54D /* InfoPlist.strings */,
 				0521CD5019B47425001BA54D /* main.m */,
-				0521CD5219B47425001BA54D /* GCDemo-Prefix.pch */,
+				0521CD5219B47425001BA54D /* GameControllerDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 		0521CD7219B47425001BA54D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0521CD7319B47425001BA54D /* GCDemoTests-Info.plist */,
+				0521CD7319B47425001BA54D /* GameControllerDemoTests-Info.plist */,
 				0521CD7419B47425001BA54D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0521CD3E19B47425001BA54D /* GCDemo */ = {
+		0521CD3E19B47425001BA54D /* GameControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0521CD7B19B47425001BA54D /* Build configuration list for PBXNativeTarget "GCDemo" */;
+			buildConfigurationList = 0521CD7B19B47425001BA54D /* Build configuration list for PBXNativeTarget "GameControllerDemo" */;
 			buildPhases = (
 				0521CD3B19B47425001BA54D /* Sources */,
 				0521CD3C19B47425001BA54D /* Frameworks */,
@@ -227,14 +227,14 @@
 			);
 			dependencies = (
 			);
-			name = GCDemo;
+			name = GameControllerDemo;
 			productName = GCDemo;
-			productReference = 0521CD3F19B47425001BA54D /* GCDemo.app */;
+			productReference = 0521CD3F19B47425001BA54D /* GameControllerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0521CD6919B47425001BA54D /* GCDemoTests */ = {
+		0521CD6919B47425001BA54D /* GameControllerDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0521CD7E19B47425001BA54D /* Build configuration list for PBXNativeTarget "GCDemoTests" */;
+			buildConfigurationList = 0521CD7E19B47425001BA54D /* Build configuration list for PBXNativeTarget "GameControllerDemoTests" */;
 			buildPhases = (
 				0521CD6619B47425001BA54D /* Sources */,
 				0521CD6719B47425001BA54D /* Frameworks */,
@@ -245,9 +245,9 @@
 			dependencies = (
 				0521CD7019B47425001BA54D /* PBXTargetDependency */,
 			);
-			name = GCDemoTests;
+			name = GameControllerDemoTests;
 			productName = GCDemoTests;
-			productReference = 0521CD6A19B47425001BA54D /* GCDemoTests.xctest */;
+			productReference = 0521CD6A19B47425001BA54D /* GameControllerDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0521CD3A19B47425001BA54D /* Build configuration list for PBXProject "GCDemo" */;
+			buildConfigurationList = 0521CD3A19B47425001BA54D /* Build configuration list for PBXProject "GameControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -278,8 +278,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0521CD3E19B47425001BA54D /* GCDemo */,
-				0521CD6919B47425001BA54D /* GCDemoTests */,
+				0521CD3E19B47425001BA54D /* GameControllerDemo */,
+				0521CD6919B47425001BA54D /* GameControllerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 /* Begin PBXTargetDependency section */
 		0521CD7019B47425001BA54D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0521CD3E19B47425001BA54D /* GCDemo */;
+			target = 0521CD3E19B47425001BA54D /* GameControllerDemo */;
 			targetProxy = 0521CD6F19B47425001BA54D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,11 +463,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GCDemo/GCDemo-Prefix.pch";
-				INFOPLIST_FILE = "GCDemo/GCDemo-Info.plist";
+				GCC_PREFIX_HEADER = "GCDemo/GameControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "GCDemo/GameControllerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GameControllerDemo;
 				PROVISIONING_PROFILE = "F36B8C58-D702-4AA2-AF54-80D7B7844B59";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "GCDemo/GCDemo-Bridging-Header.h";
@@ -483,11 +483,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GCDemo/GCDemo-Prefix.pch";
-				INFOPLIST_FILE = "GCDemo/GCDemo-Info.plist";
+				GCC_PREFIX_HEADER = "GCDemo/GameControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "GCDemo/GameControllerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GameControllerDemo;
 				PROVISIONING_PROFILE = "F36B8C58-D702-4AA2-AF54-80D7B7844B59";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "GCDemo/GCDemo-Bridging-Header.h";
@@ -510,8 +510,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GCDemoTests/GCDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GCDemoTests/GameControllerDemoTests-Info.plist";
+				PRODUCT_NAME = GameControllerDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -528,8 +528,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GCDemo/GCDemo-Prefix.pch";
-				INFOPLIST_FILE = "GCDemoTests/GCDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GCDemoTests/GameControllerDemoTests-Info.plist";
+				PRODUCT_NAME = GameControllerDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0521CD3A19B47425001BA54D /* Build configuration list for PBXProject "GCDemo" */ = {
+		0521CD3A19B47425001BA54D /* Build configuration list for PBXProject "GameControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0521CD7919B47425001BA54D /* Debug */,
@@ -547,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0521CD7B19B47425001BA54D /* Build configuration list for PBXNativeTarget "GCDemo" */ = {
+		0521CD7B19B47425001BA54D /* Build configuration list for PBXNativeTarget "GameControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0521CD7C19B47425001BA54D /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0521CD7E19B47425001BA54D /* Build configuration list for PBXNativeTarget "GCDemoTests" */ = {
+		0521CD7E19B47425001BA54D /* Build configuration list for PBXNativeTarget "GameControllerDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0521CD7F19B47425001BA54D /* Debug */,

@@ -7,7 +7,7 @@
 //
 
 #import "TCAttributedTextScene.h"
-#import "GCDemo-Swift.h"
+#import "GameControllerDemo-Swift.h"
 
 @implementation TCAttributedTextScene
 -(id)initWithSize:(CGSize)size {    
