@@ -9,5 +9,6 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface TCTextScene : SKScene
+@property(nonatomic) SKLabelNode *numberLabel;
 @property(nonatomic) SKLabelNode *label;
 @end

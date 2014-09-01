@@ -26,8 +26,11 @@
 		0521CD7619B47425001BA54D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0521CD7419B47425001BA54D /* InfoPlist.strings */; };
 		0521CD7819B47425001BA54D /* GCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521CD7719B47425001BA54D /* GCDemoTests.m */; };
 		0521CD8219B47A41001BA54D /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521CD8119B47A41001BA54D /* GameController.framework */; };
-		0521CD8519B49777001BA54D /* extended.png in Resources */ = {isa = PBXBuildFile; fileRef = 0521CD8319B49777001BA54D /* extended.png */; };
-		0521CD8619B49777001BA54D /* standard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0521CD8419B49777001BA54D /* standard.png */; };
+		0521CD8919B497BF001BA54D /* TCImageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521CD8819B497BF001BA54D /* TCImageScene.m */; };
+		0529F1E119B49CCE007B1934 /* ASAttributedLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529F1E019B49CCE007B1934 /* ASAttributedLabelNode.swift */; };
+		0529F1E419B49D37007B1934 /* TCAttributedTextScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */; };
+		0538CC9419B4A0040045DA8F /* code1.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9319B4A0040045DA8F /* code1.rtf */; };
+		0538CC9619B4A1790045DA8F /* code2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0538CC9519B4A1790045DA8F /* code2.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +69,14 @@
 		0521CD7519B47425001BA54D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0521CD7719B47425001BA54D /* GCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDemoTests.m; sourceTree = "<group>"; };
 		0521CD8119B47A41001BA54D /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
-		0521CD8319B49777001BA54D /* extended.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = extended.png; path = ../../extended.png; sourceTree = "<group>"; };
-		0521CD8419B49777001BA54D /* standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = standard.png; path = ../../standard.png; sourceTree = "<group>"; };
+		0521CD8719B497BF001BA54D /* TCImageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCImageScene.h; sourceTree = "<group>"; };
+		0521CD8819B497BF001BA54D /* TCImageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCImageScene.m; sourceTree = "<group>"; };
+		0529F1DF19B49CCE007B1934 /* GCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0529F1E019B49CCE007B1934 /* ASAttributedLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAttributedLabelNode.swift; sourceTree = "<group>"; };
+		0529F1E219B49D37007B1934 /* TCAttributedTextScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAttributedTextScene.h; sourceTree = "<group>"; };
+		0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAttributedTextScene.m; sourceTree = "<group>"; };
+		0538CC9319B4A0040045DA8F /* code1.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code1.rtf; sourceTree = "<group>"; };
+		0538CC9519B4A1790045DA8F /* code2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = code2.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +148,17 @@
 				0521CD5D19B47425001BA54D /* TCViewController.m */,
 				0521CD5F19B47425001BA54D /* TCTextScene.h */,
 				0521CD6019B47425001BA54D /* TCTextScene.m */,
+				0521CD8719B497BF001BA54D /* TCImageScene.h */,
+				0521CD8819B497BF001BA54D /* TCImageScene.m */,
+				0529F1E019B49CCE007B1934 /* ASAttributedLabelNode.swift */,
+				0529F1E219B49D37007B1934 /* TCAttributedTextScene.h */,
+				0529F1E319B49D37007B1934 /* TCAttributedTextScene.m */,
+				0538CC9319B4A0040045DA8F /* code1.rtf */,
+				0538CC9519B4A1790045DA8F /* code2.rtf */,
 				0521CD6219B47425001BA54D /* Spaceship.png */,
-				0521CD8319B49777001BA54D /* extended.png */,
-				0521CD8419B49777001BA54D /* standard.png */,
 				0521CD6419B47425001BA54D /* Images.xcassets */,
 				0521CD4B19B47425001BA54D /* Supporting Files */,
+				0529F1DF19B49CCE007B1934 /* GCDemo-Bridging-Header.h */,
 			);
 			path = GCDemo;
 			sourceTree = "<group>";
@@ -254,13 +269,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0521CD8519B49777001BA54D /* extended.png in Resources */,
 				0521CD6319B47425001BA54D /* Spaceship.png in Resources */,
 				0521CD6519B47425001BA54D /* Images.xcassets in Resources */,
 				0521CD5B19B47425001BA54D /* Main_iPad.storyboard in Resources */,
+				0538CC9419B4A0040045DA8F /* code1.rtf in Resources */,
 				0521CD5819B47425001BA54D /* Main_iPhone.storyboard in Resources */,
-				0521CD8619B49777001BA54D /* standard.png in Resources */,
 				0521CD4F19B47425001BA54D /* InfoPlist.strings in Resources */,
+				0538CC9619B4A1790045DA8F /* code2.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0521CD8919B497BF001BA54D /* TCImageScene.m in Sources */,
 				0521CD5E19B47425001BA54D /* TCViewController.m in Sources */,
 				0521CD6119B47425001BA54D /* TCTextScene.m in Sources */,
 				0521CD5119B47425001BA54D /* main.m in Sources */,
+				0529F1E119B49CCE007B1934 /* ASAttributedLabelNode.swift in Sources */,
+				0529F1E419B49D37007B1934 /* TCAttributedTextScene.m in Sources */,
 				0521CD5519B47425001BA54D /* TCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,13 +435,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GCDemo/GCDemo-Prefix.pch";
 				INFOPLIST_FILE = "GCDemo/GCDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F36B8C58-D702-4AA2-AF54-80D7B7844B59";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GCDemo/GCDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -433,13 +455,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GCDemo/GCDemo-Prefix.pch";
 				INFOPLIST_FILE = "GCDemo/GCDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F36B8C58-D702-4AA2-AF54-80D7B7844B59";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GCDemo/GCDemo-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

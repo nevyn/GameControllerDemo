@@ -8,6 +8,8 @@
 
 #import "TCViewController.h"
 #import "TCTextScene.h"
+#import "TCImageScene.h"
+#import "TCAttributedTextScene.h"
 #import <GameController/GameController.h>
 
 @implementation TCViewController
@@ -24,27 +26,96 @@
 		@{
 			@"scene": [TCTextScene class],
 			@"backgroundColor": [UIColor colorWithHue:0.911 saturation:0.092 brightness:0.823 alpha:1.000],
+			@"label.fontName": @"HelveticaNeue-Thin",
 			@"label.text": @"+[GCController introGuide]",
-			@"label.fontSize": @60,
+			@"label.fontSize": @68,
 		},
+		
+		
 		@{
 			@"scene": [TCTextScene class],
 			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontName": @"HelveticaNeue-UltraLight",
 			@"label.text": @"1. Precision",
-			@"label.fontSize": @80,
+			@"label.fontSize": @100,
 		},
 		@{
 			@"scene": [TCTextScene class],
-			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
 			@"label.text": @"2. API 😍",
+			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontSize": @100,
+		},
+		@{
+			@"scene": [TCTextScene class],
+			@"label.text": @"3. 😎",
+			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontSize": @100,
+		},
+		@{
+			@"scene": [TCImageScene class],
+			@"image": [UIImage imageNamed:@"standard"],
+		},
+		@{
+			@"scene": [TCImageScene class],
+			@"image": [UIImage imageNamed:@"extended"],
+		},
+		
+		
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithHue:0.911 saturation:0.092 brightness:0.823 alpha:1.000],
+			@"numberLabel.text": @"",
+			@"label.fontName": @"HelveticaNeue-Thin",
+			@"label.text": @"Connecting",
 			@"label.fontSize": @80,
 		},
 		@{
 			@"scene": [TCTextScene class],
 			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
-			@"label.text": @"3. 😎",
+			@"label.fontName": @"HelveticaNeue-UltraLight",
+			@"numberLabel.text": @"1",
+			@"label.text": @"Listen for controller connection",
 			@"label.fontSize": @80,
 		},
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontName": @"HelveticaNeue-UltraLight",
+			@"numberLabel.text": @"2",
+			@"label.text": @"Remove on-screen control UI",
+			@"label.fontSize": @80,
+		},
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithRed:0x99/255. green:0xd1/255. blue:0xef/255. alpha:1.0],
+			@"label.fontName": @"HelveticaNeue-UltraLight",
+			@"numberLabel.text": @"3",
+			@"label.text": @"(Can't require hardware controllers)",
+			@"label.fontSize": @70,
+		},
+		@{
+			@"scene": [TCImageScene class],
+			@"numberLabel.text": @"4",
+			@"image": [UIImage imageNamed:@"4p"],
+		},
+		@{
+			@"scene": [TCAttributedTextScene class],
+			@"label.attributedString": [[NSAttributedString alloc] initWithFileURL:[[NSBundle mainBundle] URLForResource:@"code1" withExtension:@"rtf"] options:nil documentAttributes:nil error:NULL],
+		},
+		@{
+			@"scene": [TCAttributedTextScene class],
+			@"label.attributedString": [[NSAttributedString alloc] initWithFileURL:[[NSBundle mainBundle] URLForResource:@"code2" withExtension:@"rtf"] options:nil documentAttributes:nil error:NULL],
+		},
+		
+		
+		@{
+			@"scene": [TCTextScene class],
+			@"backgroundColor": [UIColor colorWithHue:0.911 saturation:0.092 brightness:0.823 alpha:1.000],
+			@"label.fontName": @"HelveticaNeue-Thin",
+			@"label.text": @"Getting Input",
+			@"label.fontSize": @80,
+		},
+
 
 	];
 	
@@ -86,13 +157,13 @@
 - (void)nextScene
 {
 	if(_index == _steps.count-1)
-		return;
+		_index = -1;
 	[self switchToSceneIndex:++_index];
 }
 - (void)prevScene
 {
 	if(_index <= 0)
-		return;
+		_index = (int)_steps.count;
 	[self switchToSceneIndex:--_index];
 }
 - (void)switchToSceneIndex:(int)index
